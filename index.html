@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Skte8 — House / EDM / Techno DJ</title>
+  <meta name="description" content="Skte8 — house, EDM and techno DJ based in Edinburg, TX (RGV). Now booking clubs, parties, campus events and skate jams.">
+
+  <!-- link preview when you text/DM the site to promoters -->
+  <meta property="og:title" content="Skte8 — House / EDM / Techno DJ">
+  <meta property="og:description" content="RGV-based DJ. Now booking clubs, parties, campus events and skate jams.">
+  <meta property="og:image" content="images/share.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="images/favicon.png">
+  <link rel="apple-touch-icon" href="images/favicon.png">
+  <meta name="theme-color" content="#121212">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- grip tape noise overlay -->
+  <svg class="grain" aria-hidden="true">
+    <filter id="grit"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.55 0"/></filter>
+    <rect width="100%" height="100%" filter="url(#grit)"/>
+  </svg>
+
+  <header class="nav">
+    <a href="#top" class="nav-logo tag">Skte8</a>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
+    <nav class="nav-links">
+      <a href="#about">Bio</a>
+      <a href="#mixes">Mixes</a>
+      <a href="#book" class="btn-sticker small">Book Me</a>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-stripes" aria-hidden="true"></div>
+
+      <div class="hero-inner">
+        <p class="hero-kicker"><span class="tape">Now Booking</span></p>
+        <h1 class="hero-name tag" data-text="Skte8">Skte8</h1>
+        <p class="hero-genres">
+          <span>House</span><i>✦</i><span>EDM</span><i>✦</i><span>Techno</span>
+        </p>
+        <div class="hero-cta">
+          <a href="#book" class="btn-sticker">Book Skte8 ✸</a>
+          <a href="#about" class="btn-ghost">Read Bio →</a>
+        </div>
+      </div>
+
+      <!-- vinyl that doubles as a skate wheel -->
+      <div class="wheel" aria-hidden="true">
+        <div class="wheel-disc">
+          <div class="wheel-label tag">S8</div>
+        </div>
+      </div>
+
+      <div class="eq" aria-hidden="true">
+        <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+      </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>4 ON THE FLOOR</span><b>✸</b><span>KICKFLIPS &amp; KICK DRUMS</span><b>✸</b><span>128 BPM</span><b>✸</b><span>HOUSE</span><b>✸</b><span>TECHNO</span><b>✸</b><span>EDM</span><b>✸</b><span>NOW BOOKING</span><b>✸</b>
+        <span>4 ON THE FLOOR</span><b>✸</b><span>KICKFLIPS &amp; KICK DRUMS</span><b>✸</b><span>128 BPM</span><b>✸</b><span>HOUSE</span><b>✸</b><span>TECHNO</span><b>✸</b><span>EDM</span><b>✸</b><span>NOW BOOKING</span><b>✸</b>
+      </div>
+    </div>
+
+    <!-- BIO -->
+    <section id="about" class="section about">
+      <div class="about-photo">
+        <img src="images/profile.jpg" alt="Skte8 behind the decks" onerror="this.replaceWith(document.getElementById('photo-fallback').content.cloneNode(true))">
+        <template id="photo-fallback">
+          <div class="photo-placeholder"><span class="tag">S8</span><small>images/profile.jpg</small></div>
+        </template>
+        <span class="sticker sticker--a">HOUSE</span>
+        <span class="sticker sticker--b">TECHNO</span>
+      </div>
+      <div class="about-text">
+        <h2 class="section-title"><span class="tag">Bio</span></h2>
+        <p class="lead">Skate rat by day, selector by night.</p>
+        <p>Raised in Corpus Christi and now based in Edinburg, TX, Skte8 is a UTRGV student who picked up the decks in the summer of 2026 and hasn't stepped off since. In that short time Skte8 has already played The Gremlin.</p>
+        <p>The sound: rolling house grooves, driving techno and big EDM moments, mixed with the same no-rules energy as a session at the local spot. Skte8 is looking for more nights across the RGV and the Coastal Bend: clubs, house parties, campus events and skate jams.</p>
+        <ul class="facts">
+          <li><b>Based in</b><span>Edinburg, TX · RGV</span></li>
+          <li><b>From</b><span>Corpus Christi, TX</span></li>
+          <li><b>Played at</b><span>The Gremlin</span></li>
+          <li><b>Plays</b><span>House · EDM · Techno</span></li>
+          <li><b>Sets</b><span>1–3 hrs · 120–135 BPM</span></li>
+          <li><b>Available for</b><span>Clubs · Parties · Campus events · Skate jams</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- action shots: hidden automatically if the files aren't there -->
+    <div class="gallery">
+      <img src="images/action-1.jpg" alt="Skte8 DJing" onerror="this.remove()">
+      <img src="images/action-2.jpg" alt="Skte8 skating" onerror="this.remove()">
+      <img src="images/action-3.jpg" alt="Skte8 crowd" onerror="this.remove()">
+    </div>
+
+    <!-- PLAYED AT: add a new <li> for every venue -->
+    <section class="played">
+      <h2 class="played-title"><span class="tape tape--yellow">Played At</span></h2>
+      <ul class="venues">
+        <li>The Gremlin</li>
+      </ul>
+    </section>
+
+    <!-- MIXES
+         Paste your SoundCloud or Mixcloud link into data-url on each deck.
+         Copy/paste a whole <article> to add more. -->
+    <section id="mixes" class="section section--concrete">
+      <h2 class="section-title"><span class="tag">Mixes</span><small>// hit play, keep scrolling</small></h2>
+
+      <div class="decks">
+        <article class="deck deck--green" data-url="https://soundcloud.com/skte8/resumevid">
+          <div class="deck-top"><span class="deck-num">01</span><span class="deck-genre">House</span></div>
+          <h3>resumevid</h3>
+          <p>A small lil house mix: a quick taste of the Skte8 sound.</p>
+          <div class="deck-meta"><span>15 min</span><span>2026</span></div>
+          <button class="deck-play" aria-label="Play resumevid">▶</button>
+        </article>
+
+        <!-- placeholder: delete this card once there are 2+ real mixes -->
+        <article class="deck deck--soon">
+          <div class="deck-top"><span class="deck-num">02</span><span class="deck-genre">Techno · EDM</span></div>
+          <h3>More mixes dropping soon</h3>
+          <p>Follow on SoundCloud to catch the next one first.</p>
+          <a class="btn-sticker small" href="https://soundcloud.com/skte8" target="_blank" rel="noopener">Follow ✸</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- BOOKING -->
+    <section id="book" class="section book">
+      <h2 class="section-title"><span class="tag">Book Skte8</span><small>// clubs · parties · skate events</small></h2>
+      <p class="book-direct">Or reach out directly: <a href="mailto:skte8.booking@gmail.com">skte8.booking@gmail.com</a></p>
+      <form class="book-form" action="mailto:skte8.booking@gmail.com?subject=Booking%20request%20for%20Skte8" method="post" enctype="text/plain">
+        <label>Name<input name="name" required></label>
+        <label>Email<input name="email" type="email" required></label>
+        <label>Event date<input name="date" type="date"></label>
+        <label>Event type
+          <select name="type">
+            <option>Club night</option>
+            <option>Private party</option>
+            <option>Campus / student event</option>
+            <option>Skate event</option>
+            <option>Festival</option>
+            <option>Other</option>
+          </select>
+        </label>
+        <label class="full">Details<textarea name="details" rows="4" placeholder="Venue, set length, budget, vibe…"></textarea></label>
+        <button type="submit" class="btn-sticker">Send it ✸</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-tag tag">Skte8</div>
+    <div class="socials">
+      <a href="#">Instagram</a>
+      <a href="https://soundcloud.com/skte8" target="_blank" rel="noopener">SoundCloud</a>
+      <a href="#">TikTok</a>
+    </div>
+    <p class="footer-small">© <span id="yr"></span> Skte8 · Keep rolling.</p>
+  </footer>
+
+  <!-- bottom player bar, filled when a deck is played -->
+  <div class="player" hidden>
+    <div class="player-frame"></div>
+    <button class="player-close" aria-label="Close player">✕</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
