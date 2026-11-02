@@ -55,11 +55,15 @@ function closePlayer() {
 
 document.querySelectorAll('.deck:has(.deck-play)').forEach(deck => {
   deck.querySelector('.deck-play').addEventListener('click', () => {
-    const src = embedUrl(deck.dataset.url || '');
+    const url = deck.dataset.url || '';
+    const isFile = /\.(mp3|m4a|wav)$/i.test(url);
+    const src = isFile ? url : embedUrl(url);
     if (!src) { alert('Mix link coming soon.'); return; }
     if (deck.classList.contains('playing')) { closePlayer(); return; }
     closePlayer();
-    frame.innerHTML = `<iframe allow="autoplay" src="${src}" title="Skte8 mix"></iframe>`;
+    frame.innerHTML = isFile
+      ? `<audio controls autoplay src="${src}"></audio>`
+      : `<iframe allow="autoplay" src="${src}" title="Skte8 mix"></iframe>`;
     player.hidden = false;
     document.body.classList.add('has-player');
     deck.classList.add('playing');
