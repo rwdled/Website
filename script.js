@@ -67,6 +67,13 @@ document.querySelectorAll('.deck:has(.deck-play)').forEach(deck => {
 });
 player.querySelector('.player-close').addEventListener('click', closePlayer);
 
+// hide the next-show banner once the show is over (6am the morning after)
+document.querySelectorAll('.next-show[data-date]').forEach(show => {
+  const over = new Date(show.dataset.date + 'T06:00:00');
+  over.setDate(over.getDate() + 1);
+  if (new Date() > over) show.hidden = true;
+});
+
 // hide the action-shot strip if none of the photos exist yet
 window.addEventListener('load', () => {
   const gallery = document.querySelector('.gallery');
